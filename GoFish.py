@@ -3,7 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 import time
 
-driver=webdriver.Chrome('C:/Users/R00ft0p/Documents/chromedriver_win32/chromedriver')
+driver=webdriver.Chrome('C:/Users/R00ft0p/Documents/GoFish/chromedriver_win32/chromedriver')
 #actionChains = ActionChains(driver)
 print("Welcome To GoFish")
 time.sleep(1)
