@@ -164,6 +164,7 @@ print(",------.)")
 print("`------' ") 
 
 print("Sent Link To Fish")
+driver.close()
 #driver.get('https://www.facebook.com')
 #time.sleep(1)
 #status=driver.find_element_by_xpath("//textarea[@name='xhpc_message']")
