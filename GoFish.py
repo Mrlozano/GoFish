@@ -30,7 +30,7 @@ print("|_|_\ __/ \__/  |_|  \__|\__/ | .__/ ")
 print("                              |_|    ") 
 print("-------------------------------------")
 
-print("Written By:Andrew Lozano aka R00ft0p")
+print("Written By: R00ft0p")
 print("Entering z-shadow")
 driver.get('http://z-shadow.co/')
 print("Loading Page")
