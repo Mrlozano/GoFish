@@ -2,7 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver import ActionChains
 import time
-
+zLogin="YourLoginID"
+zPassword="YourPassword"
+fBpassword="YourPassword"
+fBlogin="YourLoginID"
 driver=webdriver.Chrome('C:/Users/R00ft0p/Documents/GoFish/chromedriver_win32/chromedriver')
 #actionChains = ActionChains(driver)
 print("Welcome To GoFish")
@@ -110,10 +113,10 @@ time.sleep(1)
 print("register with Facebook.com")
 #---------------------------------------------------------------
 user=driver.find_element_by_css_selector('#user_name')
-user.send_keys('')# Your user name
+user.send_keys('zLogin')# Your user name
 time.sleep(1)
 password=driver.find_element_by_css_selector('#user_pass')
-password.send_keys('')# Your password
+password.send_keys('zPassword')# Your password
 #---------------------------------------------------------------
 time.sleep(4)
 password.send_keys(Keys.ENTER)
@@ -137,9 +140,9 @@ driver.get('https://facebook.com')
 time.sleep(4)
 #-------------------------------------------------------------------------------------
 user=driver.find_element_by_css_selector('#email') 
-user.send_keys('') # Enter email or preffered Login Id
+user.send_keys('fBlogin') # Enter email or preffered Login Id
 password=driver.find_element_by_css_selector('#pass')
-password.send_keys('') # Enter Password
+password.send_keys('fBpassword') # Enter Password
 #-------------------------------------------------------------------------------------
 login=driver.find_element_by_css_selector('#loginbutton')
 login.click()
